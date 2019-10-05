@@ -45,3 +45,8 @@ UnityLD45/Temp/UnityTempFile-061a841db853149459036c06e70e9646
 UnityLD45/Temp/UnityTempFile-05eef2ad2cdb076488d37d2f7e5cf6f1
 UnityLD45/Temp/UnityLockfile
 UnityLD45/Temp/__Backupscenes/0.backup
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+UnityLD45/.vs/UnityLD45/v16/.suo
