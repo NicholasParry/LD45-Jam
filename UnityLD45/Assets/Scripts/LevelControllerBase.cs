@@ -7,6 +7,7 @@ public class LevelControllerBase : MonoBehaviour
 {
     public static Unlocks myUnlocks;
     public static bool unlockOnEndOfLevel = true;
+    public static Unlocks myUnlocksInstance;
 
     public LevelControllerBase() //im sorry mum
     {
@@ -14,6 +15,7 @@ public class LevelControllerBase : MonoBehaviour
         {
             myUnlocks = new Unlocks(); //initalise on first load and odd failures (Probs just gunna make bugs but yolo
         }
+        myUnlocksInstance = myUnlocks;
     }
 
 

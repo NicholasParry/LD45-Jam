@@ -11,7 +11,7 @@ public class LevelEndControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.GetString("Next Level");
         if (LevelControllerBase.unlockOnEndOfLevel)
         {
             text_NewUnlock.text = "UNLOCKED\n" + LevelControllerBase.myUnlocks.UnlockNew().name;

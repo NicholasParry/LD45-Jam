@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Level5Controller.cs" />
     <Compile Include="Assets\Level5OutTransitioner.cs" />
+    <Compile Include="Assets\LevelControler_Upgradeable.cs" />
     <Compile Include="Assets\LevelEndControler.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />

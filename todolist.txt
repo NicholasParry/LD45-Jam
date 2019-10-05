@@ -5,6 +5,8 @@ sound
 respawning
 lighting
 music
+paralax background
 Scores
 power ups
 weapons
+2d levels end -> 3d levels end

@@ -18,7 +18,7 @@ public class Unlocks
     {
         name = "Widescreen",
         description = "unlocks 16:9 widescreen",
-        isUnlocked = false
+        isUnlocked = true
     };
 
     public static unlock background = new unlock
@@ -35,10 +35,17 @@ public class Unlocks
         isUnlocked = false
     };
 
+    public static unlock Music = new unlock
+    {
+        name = "Music",
+        description = "adds music effects to the game",
+        isUnlocked = false
+    };
+
 
     public Unlocks()
     {
-        unlockables = new unlock[] { WideScreen, background, Sound };
+        unlockables = new unlock[] { WideScreen, background, Sound, Music };
     }
 
 
