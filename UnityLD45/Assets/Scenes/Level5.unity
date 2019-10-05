@@ -563,7 +563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341548419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.69, y: 1.69, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -1552,7 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fd982e92f1f564892f29b74ab4425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevelName: Level1
+  NextLevelName: Level5Out
 --- !u!1 &1876812054
 GameObject:
   m_ObjectHideFlags: 0

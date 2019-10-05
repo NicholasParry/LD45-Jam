@@ -5,6 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LevelControllerBase : MonoBehaviour
 {
+    public static Unlocks myUnlocks;
+    public static bool unlockOnEndOfLevel = true;
+
+    public LevelControllerBase() //im sorry mum
+    {
+        if (myUnlocks == null)
+        {
+            myUnlocks = new Unlocks(); //initalise on first load and odd failures (Probs just gunna make bugs but yolo
+        }
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {

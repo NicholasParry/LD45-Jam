@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Level5Controller.cs" />
+    <Compile Include="Assets\Level5OutTransitioner.cs" />
+    <Compile Include="Assets\LevelEndControler.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Assets\Scripts\LevelControler.cs" />
     <Compile Include="Assets\Scripts\LevelControllerBase.cs" />
     <Compile Include="Assets\Scripts\RotateText.cs" />
+    <Compile Include="Assets\Scripts\Unlocks.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

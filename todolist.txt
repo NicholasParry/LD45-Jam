@@ -1,0 +1,10 @@
+todo list
+16:9
+Backgrounds
+sound
+respawning
+lighting
+music
+Scores
+power ups
+weapons
