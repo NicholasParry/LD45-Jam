@@ -3,13 +3,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+/LD45-Jam/[Ll]ibrary/
+/LD45-Jam/[Tt]emp/
+/LD45-Jam/[Oo]bj/
+/LD45-Jam/[Bb]uild/
+/LD45-Jam/[Bb]uilds/
+/LD45-Jam/[Ll]ogs/
+/LD45-Jam/[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
