@@ -5,42 +5,52 @@ using UnityEngine;
 public class EnemyControler : MonoBehaviour
 {
 
-    public GameObject[] positions;
-    public bool canMoveX = true, canMoveY = false, canMovez = false;
-    public float speed;
+    public GameObject[] Targets;
+    public float speed = 1;
 
-    private int targetPosition = 0;
-    private Transform currentTarget;
+    private int targetPositionIndex = 0;
+    private Vector3 currentTarget;
+    private Vector3[] TargetPositions;
     // Start is called before the first frame update
+
+     public LevelControllerBase levelControler;
     void Start()
     {
-        currentTarget = positions[targetPosition].transform;
-        foreach(GameObject go in positions)
+        TargetPositions = new Vector3[Targets.Length];
+        for(int i = 0; i < Targets.Length; i++)
         {
-            go.GetComponent<SpriteRenderer>().enabled = false;
+            Targets[i].GetComponent<SpriteRenderer>().enabled = false;
+            TargetPositions[i] = new Vector3(Targets[i].transform.position.x, Targets[i].transform.position.y, Targets[i].transform.position.z); //ewww
         }
+        currentTarget = TargetPositions[targetPositionIndex];
     }
 
     // Update is called once per frame
     void Update()
     {
         float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, step);
-        Debug.Log(Vector3.Distance(transform.position, currentTarget.position) < 0.1f);
-        if (Vector3.Distance(transform.position, currentTarget.position) < 0.1f)
+        transform.position = Vector3.MoveTowards(transform.position, currentTarget, step);
+        if (Vector3.Distance(transform.position, currentTarget) < 0.1f)
         {
-            if(positions.Length > targetPosition + 1)
+            if(TargetPositions.Length > targetPositionIndex + 1)
             {
-                targetPosition += 1;
-                currentTarget = positions[targetPosition].transform;
+                targetPositionIndex += 1;
+                currentTarget = TargetPositions[targetPositionIndex];
                 transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             } else
             {
-                targetPosition = 0;
-                currentTarget = positions[targetPosition].transform;
+                targetPositionIndex = 0;
+                currentTarget = TargetPositions[targetPositionIndex];
                 transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
         }
 
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.otherCollider);
+        levelControler.OnReset();
     }
 }
