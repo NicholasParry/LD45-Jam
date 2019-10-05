@@ -51,6 +51,6 @@ public class EnemyControler : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.otherCollider);
-        levelControler.OnReset();
+        FindObjectOfType<LevelControllerBase>().OnReset();
     }
 }

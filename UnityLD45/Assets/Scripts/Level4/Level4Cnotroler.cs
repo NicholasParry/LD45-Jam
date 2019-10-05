@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level4Cnotroler : LevelControllerBase
 {
@@ -15,6 +16,10 @@ public class Level4Cnotroler : LevelControllerBase
     // Update is called once per frame
     void Update()
     {
+
+
+
+
         foreach(GameObject go in enemysToKill)
         {
             if (go)
@@ -22,11 +27,11 @@ public class Level4Cnotroler : LevelControllerBase
                 return;
             }
         }
-        Debug.Log("Killed");
+        SceneManager.LoadScene("Level5");
     }
 
     public override void OnLocalReset()
     {
-
+        SceneManager.LoadScene("Level4");
     }
 }

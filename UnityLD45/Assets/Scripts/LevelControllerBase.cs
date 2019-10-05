@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelControllerBase : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class LevelControllerBase : MonoBehaviour
 
     public virtual void OnLocalReset()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

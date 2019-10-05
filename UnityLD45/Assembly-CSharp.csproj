@@ -62,8 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CollisionScript.cs" />
-    <Compile Include="Assets\DestroyOnPlayerCollision.cs" />
+    <Compile Include="Assets\Level5Controller.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -72,10 +71,13 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\CollisionScript.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnPlayerCollision.cs" />
     <Compile Include="Assets\Scripts\EnemyControler.cs" />
     <Compile Include="Assets\Scripts\Level1\Level1.cs" />
     <Compile Include="Assets\Scripts\Level2\Level2.cs" />
     <Compile Include="Assets\Scripts\Level3\Level3.cs" />
+    <Compile Include="Assets\Scripts\Level3\Level3Collision.cs" />
     <Compile Include="Assets\Scripts\Level4\Level4Cnotroler.cs" />
     <Compile Include="Assets\Scripts\LevelControler.cs" />
     <Compile Include="Assets\Scripts\LevelControllerBase.cs" />
@@ -83,6 +85,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Sprites\kenney_simplifiedplatformer\License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
