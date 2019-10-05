@@ -11,11 +11,13 @@ public class LevelControllerBase : MonoBehaviour
 
     public LevelControllerBase() //im sorry mum
     {
+        
         if (myUnlocks == null)
         {
             myUnlocks = new Unlocks(); //initalise on first load and odd failures (Probs just gunna make bugs but yolo
         }
         myUnlocksInstance = myUnlocks;
+        
     }
 
 

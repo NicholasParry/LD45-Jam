@@ -66,6 +66,8 @@
     <Compile Include="Assets\Level5OutTransitioner.cs" />
     <Compile Include="Assets\LevelControler_Upgradeable.cs" />
     <Compile Include="Assets\LevelEndControler.cs" />
+    <Compile Include="Assets\myPlatforChar2d_new.cs" />
+    <Compile Include="Assets\MyPlatformCharacter2d.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />

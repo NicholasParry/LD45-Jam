@@ -1,17 +1,18 @@
 using System;
 using UnityEngine;
+using UnityStandardAssets._2D;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace UnityStandardAssets._2D
-{
+
     [RequireComponent(typeof (PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
         public bool levelHasSound = false;
+
         private PlatformerCharacter2D m_Character;
-        private bool m_Jump;
+        public bool m_Jump;
 
-
+        
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
@@ -25,6 +26,7 @@ namespace UnityStandardAssets._2D
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+            
         }
 
 
@@ -43,4 +45,4 @@ namespace UnityStandardAssets._2D
             Debug.Log("Player Destroyed");
         }
     }
-}
+

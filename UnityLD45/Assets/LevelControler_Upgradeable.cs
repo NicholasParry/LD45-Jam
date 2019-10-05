@@ -14,6 +14,8 @@ public class LevelControler_Upgradeable : LevelControllerBase
     private AudioSource[] soundEffects;
     private Unlocks _unlocks;
 
+    public Animator anim22;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,14 @@ public class LevelControler_Upgradeable : LevelControllerBase
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (Unlocks.Sound.isUnlocked)
+            {
+                jumpSound.Play();
+            }
+            
+        }
     }
 
     private void workoutFeatures()

@@ -18,7 +18,7 @@ public class Unlocks
     {
         name = "Widescreen",
         description = "unlocks 16:9 widescreen",
-        isUnlocked = true
+        isUnlocked = false
     };
 
     public static unlock background = new unlock
