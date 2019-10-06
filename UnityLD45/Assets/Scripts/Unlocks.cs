@@ -54,9 +54,20 @@ public class Unlocks
 
     public unlock UnlockNew()
     {
-        unlock newUnlock = getLocked()[new Random().Next(getLocked().Count)];
-        newUnlock.isUnlocked = true;
-        return newUnlock;
+        try
+        {
+
+            unlock newUnlock = getLocked()[new Random().Next(getLocked().Count)];
+            newUnlock.isUnlocked = true;
+            return newUnlock;
+        } catch 
+        {
+
+        }
+
+
+
+        return new unlock { name = "ALL UNLOCKED", description= "THIS IS A HACK AROUND", isUnlocked = true};
 
     }
 

@@ -62,13 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Level5Controller.cs" />
-    <Compile Include="Assets\Level5OutTransitioner.cs" />
-    <Compile Include="Assets\LevelControler_Upgradeable.cs" />
-    <Compile Include="Assets\LevelEndControler.cs" />
-    <Compile Include="Assets\myPlatforChar2d_new.cs" />
-    <Compile Include="Assets\MyPlatformCharacter2d.cs" />
-    <Compile Include="Assets\ResetOnTouch.cs" />
+    <Compile Include="Assets\MusicController.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -85,8 +79,15 @@
     <Compile Include="Assets\Scripts\Level3\Level3.cs" />
     <Compile Include="Assets\Scripts\Level3\Level3Collision.cs" />
     <Compile Include="Assets\Scripts\Level4\Level4Cnotroler.cs" />
+    <Compile Include="Assets\Scripts\Level5Controller.cs" />
+    <Compile Include="Assets\Scripts\Level5OutTransitioner.cs" />
     <Compile Include="Assets\Scripts\LevelControler.cs" />
+    <Compile Include="Assets\Scripts\LevelControler_Upgradeable.cs" />
     <Compile Include="Assets\Scripts\LevelControllerBase.cs" />
+    <Compile Include="Assets\Scripts\LevelEndControler.cs" />
+    <Compile Include="Assets\Scripts\myPlatforChar2d_new.cs" />
+    <Compile Include="Assets\Scripts\MyPlatformCharacter2d.cs" />
+    <Compile Include="Assets\Scripts\ResetOnTouch.cs" />
     <Compile Include="Assets\Scripts\RotateText.cs" />
     <Compile Include="Assets\Scripts\Unlocks.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
