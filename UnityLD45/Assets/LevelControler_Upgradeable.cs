@@ -14,7 +14,10 @@ public class LevelControler_Upgradeable : LevelControllerBase
     private AudioSource[] soundEffects;
     private Unlocks _unlocks;
 
-    public Animator anim22;
+    public Transform playerPosition;
+
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,8 @@ public class LevelControler_Upgradeable : LevelControllerBase
             }
             
         }
+        
+
     }
 
     private void workoutFeatures()

@@ -54,7 +54,9 @@ public class Unlocks
 
     public unlock UnlockNew()
     {
-        return getLocked()[new Random().Next(getLocked().Count)];
+        unlock newUnlock = getLocked()[new Random().Next(getLocked().Count)];
+        newUnlock.isUnlocked = true;
+        return newUnlock;
 
     }
 
