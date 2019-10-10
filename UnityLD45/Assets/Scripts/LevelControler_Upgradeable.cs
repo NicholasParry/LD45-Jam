@@ -62,8 +62,9 @@ public class LevelControler_Upgradeable : LevelControllerBase
             music.mute = true;
         } else
         {
-            music.Play();
+
             music.time = PlayerPrefs.GetFloat("SongPos");
+            music.Play();
         }
 
         if (!Unlocks.Sound.isUnlocked)

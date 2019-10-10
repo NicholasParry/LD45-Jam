@@ -39,7 +39,7 @@ public class Unlocks
     {
         name = "Music",
         description = "adds music effects to the game",
-        isUnlocked = false
+        isUnlocked = true
     };
 
 
